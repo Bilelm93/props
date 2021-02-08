@@ -3,12 +3,9 @@ import './App.css';
 import Profile from './profile/Profile';
 
 function App() {
-  const styleImg ={width:'200px'}
+  const styleImg ={width:'500px', padding:'20px'}
 
 
-  const handleClick=e=>{
-    e.preventDefault();
-    alert("hello"); };
 
 
   return (
@@ -17,9 +14,10 @@ function App() {
     <br/>
       <header className="App-header" >
         
-       <Profile fullName="Bilel Marrouchi" bio="111" profession="teacher" handleClick={handleClick}><br/>
+       <Profile fullName="Zakir Naik" bio="
+        October 18, 1965 in Bombay, India" profession="propagandist of Islam">
       
-       <img src="react.png" alt="photo" style={styleImg}/></Profile>
+       <img src="2210.jpg" alt="photo" style={styleImg}/></Profile>
      
        </header>
 

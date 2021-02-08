@@ -1,17 +1,21 @@
 import React from "react" ;
 import PropTypes from 'prop-types';
 import '../App.css' ;
-const Profile =(props ,{handleClick})=> {
+const Profile =(props)=> {
     
     const style ={color:'white' , 
       fontSize:'30px', 
      border:'2px solid white' , width:'300px', 
     paddingBbottom:'30px',
-    textAlign:'center' ,  height:'150px' }
+    textAlign:'center' ,  height:'200px' }
     const style2 ={ fontSize:25 , backgroundColor: 'white' , padding:5 
 
     }
     
+ function handleClick (){
+   // e.preventDefault();
+    alert(`hello ${props.fullName} to web site`) }
+
 
  return (
      <>
@@ -30,7 +34,7 @@ const Profile =(props ,{handleClick})=> {
      <div className="object2">
      <span > <span style={style2}>THIS IS PROFILE PICTURE</span>  <br/> {props.children}</span>
 <br/>
-<button className="img" onClick={e => handleClick(e)}>Cliquez ici</button>
+<button className="img" onClick={handleClick} >Click Me</button>
 </div>
      </>
  
